@@ -82,9 +82,7 @@ if __name__ == '__main__':
         sys.exit()
 
     # Виконання MapReduce на вхідному тексті
-    search_words = ['war', 'peace', 'love']
-    search_words = None
-    result = map_reduce(text, search_words)
+    result = map_reduce(text)
     visualize_top_words(result, 10)
 
     print("Результат підрахунку слів:", result)
